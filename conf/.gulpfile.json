@@ -1,0 +1,40 @@
+{
+	"html": {
+		"src": "src/template/**/*.html",
+		"build": "build/template",
+		"replace": {
+			"css": {
+				"match": "<link( .*?)? href=\"(.*?)\/style\/(.*?)\\.(scss|css)\"( .*?)?>",
+				"replace": "<link$1 href=\"$2/css/$3.css\"$5>"
+			},
+			"js": {
+				"match": "<script( .*?)? src=\"(.*?)\/javascript\/(.*?)\"( .*?)?>",
+				"replace": "<script$1 src=\"$2/js/$3\"$4>"
+			}
+		},
+		"beautify": "conf/.jsbeautifyrc.json"
+	},
+	"css": {
+		"src": "src/static/style/**/*.{scss,css}",
+		"build": "build/static/css",
+		"referIg": ["**/*", "!src/static/style/reference/**/*"],
+		"sass": "**/*.scss",
+		"autopre": "../conf/.autoprefixer.json",
+		"beautify": "./conf/.csscomb.json"
+	},
+	"js": {
+		"src": "src/static/javascript/**/*.js",
+		"build": "build/static/js",
+		"referIg": ["**/*", "!src/static/javascript/reference/**/*"],
+		"jshint": "./conf/.jshintrc",
+		"beautify": "../conf/.jsbeautifyrc.json"
+	},
+	"others": {
+		"styleSrc": ["src/static/style/**/*.*", "!**/*.{scss,css}"],
+		"javascriptSrc": ["src/static/javascript/**/*.*", "!**/*.js"],
+		"src": ["src/**/*.*", "!src/static/{style,javascript}/**/*.*"],
+		"build": "build",
+		"styleBuild": "build/static/css",
+		"javascriptBuild": "build/static/js"
+	}
+}

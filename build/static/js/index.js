@@ -1,0 +1,13 @@
+"use strict";
+
+/*
+ * JS文件
+ */
+
+(function (window, undefined) {
+	"use strict";
+
+	console.log("Hello, world!");
+})(window);
+
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImluZGV4LmpzIl0sIm5hbWVzIjpbIndpbmRvdyIsInVuZGVmaW5lZCIsImNvbnNvbGUiLCJsb2ciXSwibWFwcGluZ3MiOiI7O0FBQUE7Ozs7QUFJQSxDQUFDLFVBQVNBLE1BQVQsRUFBaUJDLFNBQWpCLEVBQTJCO0FBQzNCOztBQUVBQyxVQUFRQyxHQUFSLENBQVksZUFBWjtBQUNBLENBSkQsRUFJR0gsTUFKSCIsImZpbGUiOiJpbmRleC5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8qXHJcbiAqIEpT5paH5Lu2XHJcbiAqL1xyXG5cclxuKGZ1bmN0aW9uKHdpbmRvdywgdW5kZWZpbmVkKXtcclxuXHRcInVzZSBzdHJpY3RcIjtcclxuXHJcblx0Y29uc29sZS5sb2coXCJIZWxsbywgd29ybGQhXCIpO1xyXG59KSh3aW5kb3cpOyJdfQ==
